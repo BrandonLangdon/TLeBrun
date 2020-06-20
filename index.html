@@ -19,17 +19,23 @@
 <!-- Start nav -->
     <nav id="navbar" class="nav">
         <ul class ="nav-list">
-            <li>
-                <a href="#home-section">Home</a>
+            <li id = "home-nav">
+                <a href="#home">Home</a>
             </li>
-            <li>
-                <a href="#about-section">About</a>
+            <li id = "about-nav">
+                <a href="#about">About</a>
             </li>
-            <li>
+            <li id = "skills-nav">
+                <a href="#skills">Skills</a>
+            </li>
+            <li id = "experience">
                 <a href="pages/experience.html" target = "_self">Experience</a>
             </li>
             <li>
-                <a href="#projects-section">Projects</a>
+                <div id = "email" class = "email_link">
+                    <a href="mailto:Someguy@Tlebrun.com" target = "_self">
+                        <i class="fas fa-envelope-square"></i></a>
+                </div>
             </li>
         </ul>  
     </nav>
@@ -37,7 +43,7 @@
 
 <!-- Start home section -->
 <!-- This is the landing zone for the webpage -->
-    <section id="home-section" class="home-section">
+    <section id="home" class="home-section">
 
 <!-- Likely will need text with a drop shadow to ensure legibility in all situations -->
         <h1>
@@ -52,9 +58,9 @@
 <!-- End home section -->
 <!-- Start about section -->
     <section id="about" class="about-section">
-        <h3 class="about-section-header">
+        <h2 class="about-section-header">
             About Me
-        </h3>
+        </h2>
         <p>
             Materials stuff? Got it. 
             Aerospace master, additive manufacturing expert, coffee cognoscenti,
@@ -65,9 +71,9 @@
 
 <!-- Start skills section -->
     <section id="skills" class="skills-section">
-        <h3 class="skills-section-header">
+        <h2 class="skills-section-header">
             Skillz man
-        </h3>
+        </h2>
         <p>
             Skills list to highlight really quick in a simple view.
             Should be almost a summary of what will be detailed on the
@@ -80,7 +86,7 @@
 
 <!-- Start contact section -->
     <section id ="contact" class="contact-section-header">
-        <h2 id="contact" class="contact-section-header">
+        <h2 class="contact-section-header">
             Contact Me
         </h2>
     </section>
