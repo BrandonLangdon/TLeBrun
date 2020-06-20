@@ -142,6 +142,8 @@ img {
 .nav-list a:hover {
   background: var(--main-blue);
 }
+/* End nav section*/
+
 
 /* Home section */
 
@@ -163,8 +165,24 @@ img {
   color: var(--main-red);
 }
 
-/* Projects section */
 
+/* About section */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+/* Projects section */
+/*
+Uncomment to use, currently not using this section, DELETE on refactoring
 .projects-section {
   text-align: center;
   padding: 10rem 2rem;
@@ -184,6 +202,7 @@ img {
 }
 
 /* "Automagic" image grid using no media queries */
+/*
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -204,19 +223,23 @@ img {
   }
 }
 
-/* Portfolio section */
-
-.portfolio-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
+.project:hover .code {
+  color: #ff7f50;
 }
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+*/
+/* End porjects section */
 
 /* Skill section */
 
@@ -232,11 +255,11 @@ img {
   background: var(--main-gray);
 }
 
-/* Reel Section */
+/* Contacts Section */
 
-.reel-section {
+.contact-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -246,24 +269,45 @@ img {
   background: var(--main-gray);
 }
 
+.contact-section-header > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6rem;  
+  background: var(--main-gray);
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    background: var(--main-gray);
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
 .code {
   color: var(--main-gray);
   transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: #ff7f50;
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
 }
 
 .btn {
@@ -290,53 +334,6 @@ img {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
-}
-
-/* About section */
-
-.about-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
-}
-
-.contact-section-header > h2 {
-  font-size: 6rem;
-}
-
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-}
-
-.contact-section-header > p {
-  font-style: italic;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
 }
 
 /* Footer */
